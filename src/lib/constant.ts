@@ -1,0 +1,21 @@
+export enum AWARD_TYPES {
+  SPECIAL = 'SPECIAL',
+  FIRST = 'FIRST',
+  SECOND = 'SECOND',
+  THIRD = 'THIRD',
+  CONSOLATION = 'CONSOLATION'
+}
+export const AWARD_SELECT = {
+  [AWARD_TYPES.SPECIAL]: 'Giải đặc biệt',
+  [AWARD_TYPES.FIRST]: 'Giải Nhất',
+  [AWARD_TYPES.SECOND]: 'Giải Nhì',
+  [AWARD_TYPES.THIRD]: 'Giải Ba',
+  [AWARD_TYPES.CONSOLATION]: 'Giải khuyến khích'
+}
+export const NUMBER_AWARDS = {
+  [AWARD_TYPES.SPECIAL]: 1,
+  [AWARD_TYPES.FIRST]: 3,
+  [AWARD_TYPES.SECOND]: 6,
+  [AWARD_TYPES.THIRD]: 10,
+  [AWARD_TYPES.CONSOLATION]: 30
+} as const
